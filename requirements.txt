@@ -1,0 +1,11 @@
+mysql-connector-python==8.1.0
+pdfkit==1.0.0
+langchain==0.0.3
+chainlit==0.7.4
+flask==3.0.0
+chromadb==0.4.14
+ctransformers==0.2.27
+fiass==1.7.4
+huggingface-hub==0.17.3
+llama-index==0.9.3
+python==3.10.13 # Recommended
