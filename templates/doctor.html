@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 0.6cm;
+    }
+        nav {
+      margin-top: 10px;
+      margin-left: 1.3cm;
+      font-size: 0.7cm;
+    }
+
+    table {
+      width: 48.4cm;
+      border-collapse: collapse;
+      margin-top: 20px;
+      
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 25px;
+      text-align: left;
+    }
+
+    th {
+      background-color: rgb(132, 61, 255);
+    }
+
+    .filter-dropdown {
+      margin-right: 10px;
+      display: inline-block;
+      padding-left: 5cm;
+    }
+    h2{
+        font-size: 0.8cm;
+        font-weight: 700;
+        text-align: center;
+        background-color: rgb(132, 61, 255);
+        padding: 1cm;       
+    }
+    select{
+        width: 5cm;
+        height: 0.9cm;
+        font-size: 0.5cm;
+    }
+    button{
+        width: 7cm;
+        height: 1.5cm;
+        font-size: 0.5cm;
+        border-radius: 8px;
+        background-color: rgb(132, 61, 255);
+        color: #ddd;
+    }
+  </style>
+  <title>Table Example with Navbar</title>
+</head>
+<body>
+
+  <h2>Doctor's Available via Online</h2>
+
+  <nav>
+    <div class="filter-dropdown">
+      <label for="filter1">Location:</label>
+      <select id="filter1">
+        <option value="all">All</option>
+        <option value="filter1_option1">Option 1</option>
+        <option value="filter1_option2">Option 2</option>
+      </select>
+    </div>
+
+    <div class="filter-dropdown">
+      <label for="filter2">Specialization:</label>
+      <select id="filter2">
+        <option value="all">All</option>
+        <option value="filter2_option1">Option 1</option>
+        <option value="filter2_option2">Option 2</option>
+      </select>
+    </div>
+
+    <div class="filter-dropdown">
+      <label for="filter3">Date:</label>
+      <select id="filter3">
+        <option value="all">All</option>
+        <option value="filter3_option1">Option 1</option>
+        <option value="filter3_option2">Option 2</option>
+      </select>
+    </div>
+  </nav>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Specialization</th>
+        <th>Location</th>
+        <th>Mail ID</th>
+        <th>Appointment</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Dr.Sethuraman</td>
+        <td>Cariologist</td>
+        <td>Delhi</td>
+        <td>sthuraman32@gmail.com</td>
+        <td><button>Book Appointment</button></td>
+      </tr>
+      <tr>
+        <td>Dr.Pandian</td>
+        <td>Dermatologist</td>
+        <td>Delhi</td>
+        <td>maninfbe@gmail.com</td>
+        <td><button>Book Appointment</button></td>
+      </tr>
+      <tr>
+        <td>Dr.Senthil</td>
+        <td>Cariologist</td>
+        <td>Kanpur</td>
+        <td>senthil67g2@gmail.com</td>
+        <td><button>Book Appointment</button></td>
+      </tr>
+      <tr>
+        <td>Dr.Arunachalam</td>
+        <td>Neurologist</td>
+        <td>Karnataka</td>
+        <td>arunachalamn32@gmail.com</td>
+        <td><button>Book Appointment</button></td>
+      </tr>
+      <tr>
+        <td>Dr.Sethuraman</td>
+        <td>Cariologist</td>
+        <td>Delhi</td>
+        <td>sthuraman32@gmail.com</td>
+        <td><button>Book Appointment</button></td>
+      </tr>
+      <tr>
+        <td>Dr.Sethuraman</td>
+        <td>Cariologist</td>
+        <td>Delhi</td>
+        <td>sthuraman32@gmail.com</td>
+        <td><button>Book Appointment</button></td>
+      </tr>
+      <tr>
+        <td>Dr.Sethuraman</td>
+        <td>Cariologist</td>
+        <td>Delhi</td>
+        <td>sthuraman32@gmail.com</td>
+        <td><button>Book Appointment</button></td>
+      </tr>
+      <tr>
+        <td>Dr.Sethuraman</td>
+        <td>Cariologist</td>
+        <td>Delhi</td>
+        <td>sthuraman32@gmail.com</td>
+        <td><button>Book Appointment</button></td>
+      </tr>
+      <tr>
+        <td>Dr.Sethuraman</td>
+        <td>Cariologist</td>
+        <td>Delhi</td>
+        <td>sthuraman32@gmail.com</td>
+        <td><button>Book Appointment</button></td>
+      </tr>
+      <tr>
+        <td>Dr.Sethuraman</td>
+        <td>Cariologist</td>
+        <td>Delhi</td>
+        <td>sthuraman32@gmail.com</td>
+        <td><button>Book Appointment</button></td>
+      </tr>
+      <tr>
+        <td>Dr.Sethuraman</td>
+        <td>Cariologist</td>
+        <td>Delhi</td>
+        <td>sthuraman32@gmail.com</td>
+        <td><button>Book Appointment</button></td>
+      </tr>
+
+      
+      <!-- Add more rows as needed -->
+    </tbody>
+  </table>
+
+</body>
+</html>

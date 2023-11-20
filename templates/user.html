@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        header {
+            background-color: #806aff;
+            color: #fff;
+            padding: 35px;
+        }
+
+        .dashboard-title {
+            margin: 0;
+        }
+
+        .content-container {
+            display: inline-block;
+            margin: 50px;
+        }
+
+        .image-container {
+            float: left; /* Align images to the left */
+        }
+
+        .text-container {
+            float: right; /* Align text to the right */
+            text-align: left; /* Align text content to the left within the container */
+            max-width: 400px; 
+            margin-left: 3cm;/* Adjust the maximum width of the text container as needed */
+        }
+
+        img {
+            width: 500px;
+            height: 500px;
+            border-radius: 10px;
+        }
+
+        button {
+            background-color: #806aff;
+            color: white;
+            padding: 15px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+            width: 8cm;
+            height: px;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            background-color: #4671ff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="dashboard-title">Medicare</h1>
+    </header>
+    <div class="content-container">
+        <div class="image-container">
+            <img src="../static/online-medicine-flat-design-concept-illustration_198565-66.avif" alt="Floating Robot Image">
+            <br>
+            <button style="margin-top: 1cm;" onclick="window.location.href='/details'">Provide Health Data</button>
+        </div>
+        <div class="text-container">
+            <img src="../static/images/floating-robot_78370-3669.avif" alt="Floating Robot Image">
+            <br>
+            <button style="margin-left: 2.6cm;margin-top: 1cm;" >Explore AI Chatbot</button>
+        </div>
+    </div>
+    <br>
+    <div class="content-container">
+        <div class="image-container">
+            <img src="../static/hospital-location-illustration-isometric-design_203633-1007.avif" alt="Floating Robot Image">
+            <br>
+            <button style="margin-top: 1cm;" onclick="window.location.href='/doctor'">Find Domain Specialist</button>
+        </div>
+        <div class="text-container">
+            <img src="../static/hospital-application-concept_173387-1227.avif" alt="Floating Robot Image">
+            <button style="margin-left: 2.6cm;margin-top: 1cm;" onclick="window.location.href='/video_call'" >Meet a Doctor</button>
+        </div>
+    </div>
+    <br>
+</body>
+</html>

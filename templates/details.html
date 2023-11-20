@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provide Your Details</title>
+    
+    <!-- Bootstrap CSS (add the link to the Bootstrap CSS file) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 60px;
+            font-size: 0.6cm;
+        }
+        
+
+        .form-container {
+            background-color: #ffffff;
+            box-shadow: 0 4px 59px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+            font-size: 0.7cm;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 30px;
+            box-sizing: border-box;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-4">
+        <div class="form-container">
+            <h2 class="mb-4 text-center"><b>Provide Your Details</b></h2>
+            <form id="medicalForm" action="/pdf" method="post">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="patientName" name="name " required placeholder="Name">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="medicalCondition" name="medicalCondition" required placeholder="Age">
+                </div>
+
+                <div class="form-group">
+                    <select class="form-control" id="medication" name="medication" required>
+                        <option value="" disabled selected>Gender</option>
+                        <option value="medication1">Male</option>
+                        <option value="medication2">Female</option>
+                        <option value="medication2">Not to say</option>
+                        
+                        <!-- Add more options as needed -->
+                    </select>
+                    <br>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="medicalCondition" name="medicalCondition" required placeholder="Mobile No">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="medication" name="medication" required placeholder="Blood Group">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="medication" name="medication" required placeholder="City/Town">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="medication" name="medication" required placeholder="Height in Metre">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="medication" name="medication" required placeholder="Weight in Kg">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="medication" name="medication" required placeholder="Reason for Consulting">
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="medication" name="medication" required>
+                        <option value="" disabled selected>Have you undergone any surgeries in the past?</option>
+                        <option value="medication1">Yes Undergone surgeries</option>
+                        <option value="medication2">No surgeries</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="medication" name="medication" required>
+                        <option value="" disabled selected>Do you have high blood pressure</option>
+                        <option value="medication1">Yes</option>
+                        <option value="medication2">No</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="medication" name="medication" required>
+                        <option value="" disabled selected>Have you been diagnosed with elevated blood sugar levels?</option>
+                        <option value="medication1">Yes</option>
+                        <option value="medication2">No</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+
+                
+                <br>
+                <input type="submit" value="Submit" >
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function submitForm() {
+            // Add your form submission logic here (e.g., AJAX request, form validation, etc.)
+            // For this example, we're preventing the form from actually submitting.
+            event.preventDefault();
+            alert('Form submitted!'); // Replace this with your desired action
+        }
+    </script>
+
+</body>
+</html>
